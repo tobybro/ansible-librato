@@ -22,6 +22,7 @@ librato_logging_syslog_log_level: 'info'
 librato_logging_logstash_log_level: 'info'
 librato_logging_logstash_filename: '/opt/collectd/var/log/collectd.json.log'
 
+librato_apache_instances: [] 
 librato_apache_protocol: 'http'
 librato_apache_host: 'localhost'
 librato_apache_path: '/server-status'

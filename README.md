@@ -91,6 +91,25 @@ To use your own custom or upstream collectd plugin, simply have another module d
 
     The password to use for password-protected status pages. Defaults to empty.
 
+  - `librato_apache_instances`
+
+    **Type**: mapping
+
+    Apache instances to collect metrics for. Defaults to empty.
+
+    Format of the hash is:
+    ```yaml
+    librato_apache_instances: [
+      { 
+        name: webapp1
+        host: localhost
+        protocol: https
+        path: "{{ librato_apache_path }}"
+      }
+    ]
+    ```
+
+
 ### Plugin: `docker`
   - `librato_docker_protocol`
 
